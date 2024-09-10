@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustang</title>
+    <link rel="shortcut icon" href="2555013.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body, html{
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;             
+        }
+        header{
+            background-color: #444;
+        }
+        nav,a{
+            color: #ffffff;
+            background-color: #444;
+            height: 10vh;
+            margin-bottom: 20px;
+        }
+        a:hover{
+            background-color: #1a1212;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+            padding: 10px;
+        }
+        li, a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+        }
+        button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .borda{
+            background-color: #ababab;
+            width: 500px;
+            border: 1px 1px 1px 1px solid black;
+            padding: 20px;
+            margin: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DETALHES DO CARRO</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="borda">
+        <img src="ford-brasil-noticia-mustang-gt-lancamento-lote-esgotado-260324.jpg" alt="lamaborghini" width="500" height="350">
+        <h5>Mustang</h5>
+        <p>R$640.000,00</p>
+        <p>Descrição detalahada do Mustang. Inclua todas ás  especificações, como ano, modelo, cor, motor etc.</p>
+        <button onclick="redirecionar('galeria.html')">Voltar à pagina</button>
+    </div>
+    <script>
+        function redirecionar(arquivo){
+            window.location.href = arquivo;
+        }
+    </script>
+</body>
+</html>

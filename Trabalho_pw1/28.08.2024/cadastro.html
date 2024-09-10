@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="shortcut icon" href="2555013.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body{
+            margin: 0;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;     
+        } 
+        header{
+            background-color: #444;
+        }
+        nav,a{
+            color: #ffffff;
+            background-color: #444;
+        }
+        a:hover{
+            background-color: #1a1212;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+        }
+        li, a {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .cor_fundo{
+            background-color: #F7F7F7;
+            border-radius: 5px;
+            padding: 25px;
+            width: 340px;
+            box-shadow: 2px 2px 2px 2px rgb(48, 46, 46);
+            margin: auto;
+        }
+        input{
+            border-radius: 4px;
+            border: none;
+            box-shadow: 3px 3px 3px 3px black;
+            margin-bottom: 10px;
+            width: 300px;
+            height: 5vh;
+        }
+        button{
+            background-color: blue;
+            width: 200px;
+            color: #ffffff;
+            border-radius: 5px;
+            height: 5vh;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        button:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Cliente</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/xpwabqej" method="post">
+            <div class="cor_fundo">
+                <label for="nome">NOME:</label><br>
+                <input type="text" name="name" id="name" required><br>
+                <label for="email">E-MAIL:</label><br>
+                <input type="email" name="gmail" id="gmail" required><br>
+                <label for="cel">TELEFONE:</label><br>
+                <input type="tel" name="telephone" id="telephone" required><br>
+                <label for="end">ENDEREÇO:</label><br>
+                <input type="text" name="endereco" id="endereco" required>
+                <button>CADASTRAR</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

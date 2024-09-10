@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="2875331.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        textarea{
+            height: 20vh;
+            width: 400px;
+        }
+        form{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 0 50px;
+        }
+        input{
+            width: 400px;
+            margin-bottom: 5px;
+            gap: 20px;
+        }
+        label{
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+           text-align: justify;
+            
+        }
+        button{
+            background-color: #379634;
+            color: white;
+            border-radius: 4px;
+            width: 400px;
+            border: none;
+            height: 5vh;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: #2e8030;
+        }
+        .diminuicao{
+            background-color: #ffffff;
+            width: 470px;
+            height: 350px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #header{
+            background-image: linear-gradient(to top, );
+        }
+        h2{
+            margin-bottom: 10px;
+            color: #000000;
+            text-align: center;
+        }
+        input, label{
+            display: inline-block;
+            text-align: left;
+        }
+        #header{
+            background-image: linear-gradient(to top, #379634, #35FF69);
+            height: 15vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        h1{
+            color: #ffffff;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover{
+            background-color: #35FF69;
+            border-radius: 4px;
+            transition: background-color 2s;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1 class="intro">Entre em Contato</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="diminuicao">
+        <form action="#" method="post">
+            <h2>CONTATO</h2>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Enviar</button>
+            <input type="submit" value="ENVIAR">
+            <button>ENVIAR</button>
+        </form>
+    </div>
+</body>
+</html>

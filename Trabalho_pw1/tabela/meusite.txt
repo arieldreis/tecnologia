@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="shortcut icon" href="spotify-icon-512x511-5p0rqbu1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="meus_site.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p><strong>MEU SITE</strong></p>
+            <a href="tabela_com_css_embutido.html">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <h2>Formulário para Contato</h2>
+    <div class="example1">
+        <form action="#" method="post">
+            <p style="margin-bottom: 7px;color: rgba(250, 244, 244, 0.842);">n</p>
+            <label for="t0">Nome:</label><br>
+            <input type="text" placeholder="Digite..."><br>
+            <label for="t1" style="font-family: Arial, Helvetica, sans-serif;text-align: left;">E-mail:</label><br>
+            <input type="email" name="tn1" id="tn1" placeholder="Digite..."><br>
+            <label for="t2">Telefone:</label><br>
+            <input type="number" name="tn2" id="tn2" placeholder="Digite..."><br>
+            <label for="t3">Mensagem:</label><br>
+            <textarea type="text" placeholder="Digite..." style="margin-bottom: 10px; width: 350px; height: 80px;font-family: Arial, Helvetica, sans-serif;"></textarea><br>
+            <div id="ovo"><input  type="submit" value="Enviar" style="background-color:rgb(82, 75, 75); width: 355px; font-family: Arial, Helvetica, sans-serif; color: white; margin-bottom: 20px; text-align: center; height: 40px; border: none; cursor: pointer;"></div>
+        </form>
+    </div>
+    <footer>
+        <address>
+            <p id="imaginar">
+                Contato:<a href="mailto:arieldreis@gmail.com">Ariel Reis</a>
+            </p>
+        </address>
+        <p>Políticas | Termos de Privacidade</p>
+    </footer>
+</body>
+</html>

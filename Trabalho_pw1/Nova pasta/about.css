@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body{
+    background-color: #44CCFF;
+    margin: 0;
+}
+#header{
+    background-image: linear-gradient(to top, #379634, #35FF69);
+    height: 15vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 5mm;
+}
+a:hover{
+    background-color: #35FF69;
+    transition: background-color 2s;
+    border-radius: 3px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+ul{
+    color: #ffffff;
+    display: flex;
+    gap: 50px
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 30px 0;
+    color:white;
+    font-size: 5mm;
+}

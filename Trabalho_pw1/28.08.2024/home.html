@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="shortcut icon" href="2555013.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body, html{
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;             
+        }
+        header{
+            background-color: #444;
+        }
+        nav,a{
+            color: #ffffff;
+            background-color: #444;
+        }
+        a:hover{
+            background-color: #1a1212;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+        }
+        li, a {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        p{
+           margin: 20px;
+        }
+        h2{
+            margin: 20px;
+        }
+        button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        button:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BEM-VINDO A NOSSA LOJA DE CARROS</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nosso Carros</h2>
+            <p>Encontre o carro do seus sonhos em nossa vasta coleção. Confira a nossa coleção para saber mais.</p>
+            <button onclick="redirecionar('galeria.html')">VER GALERIA</button>
+        </section>
+    </main>
+    <script>
+        function redirecionar(arquivo){
+            window.location.href = arquivo;
+        }
+    </script>
+</body>
+</html>

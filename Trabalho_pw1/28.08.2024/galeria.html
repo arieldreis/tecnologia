@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA DE CARROS</title>
+    <link rel="shortcut icon" href="2555013.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body, html{
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;             
+        }
+        header{
+            background-color: #444;
+        }
+        nav,a{
+            color: #ffffff;
+            background-color: #444;
+            height: 10vh;
+        }
+        a:hover{
+            background-color: #1a1212;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+            padding: 10px;
+        }
+        li, a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .search-container{
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        .search-container button{
+            border: none;
+            background-color: gray;
+            color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px black;
+            margin-bottom: 10px;
+            height: 3.5vh;
+            cursor: pointer;
+        }
+        .search-container button:hover{
+            background-color: rgba(131, 126, 126, 0.938);
+        }
+        .search-container input{
+            border-radius: 5px;
+        }
+        p{font-weight: bolder; margin-bottom: -10px;}
+        main{
+            text-align: center;
+        }
+        .corfundo{
+            background-color: #cbcbcb;
+            width: 400px;
+            padding: 20px;
+            display: inline-block;
+            height: 72vh;
+            gap:50px;
+        }
+        .corfundo button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .corfundo button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        .corfundo button:active{
+            background-color: red;
+        }
+        .corfundo1{
+            background-color: #cbcbcb;
+            width: 400px;
+            padding: 20px;
+            display: inline-block;
+            height: 72vh;
+            margin-bottom: 20px;
+        }
+        .corfundo1 button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .corfundo1 button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        .corfundo1 button:active{
+            background-color: red;
+        } 
+        .corfundo2{
+            background-color: #cbcbcb;
+            width: 400px;
+            padding: 20px;
+            display: inline-block;
+            height: 72vh;
+            margin-bottom: 20px;
+        }
+        .corfundo2 button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .corfundo2 button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        .corfundo2 button:active{
+            background-color: red;
+        }
+        .corfundo3{
+            background-color: #cbcbcb;
+            width: 400px;
+            padding: 20px;
+            display: inline-block;
+            height: 72vh;
+            margin-bottom: 20px;
+        }
+        .corfundo3 button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .corfundo3 button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        .corfundo3 button:active{
+            background-color: red;
+        }
+        .corfundo4{
+            background-color: #cbcbcb;
+            width: 400px;
+            padding: 20px;
+            display: inline-block;
+            height: 72vh;
+            margin-bottom: 20px;
+        }
+        .corfundo4 button{
+            margin: 20px;
+            height: 5vh;
+            background-color: blue;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(66, 64, 64, 0.801);
+            cursor: pointer;
+            font-family: 'Bebas Neue', Helvetica, sans-serif;  
+            width: 150px;
+        }
+        .corfundo4 button:hover{
+            background-color: rgba(0, 0, 255, 0.829);
+        }
+        .corfundo4 button:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GALERIA DE CARROS</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+        <form>
+            <div class="search-container">
+                <input type="text" name="text" id="text" required>
+                <button onclick="sear">Buscar</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div class="corfundo">
+            <img src="2023_Lamborghini_Aventador_Ultimae.jpg" alt="lamaborghini" width="350" height="350">
+            <p>Lamborghini<br>R$1.500.000</p>
+            <button onclick="redirecionar('lamaborghini.html')">Saiba Mais</button>
+        </div>
+        <div class="corfundo1">
+            <img src="ford-brasil-noticia-mustang-gt-lancamento-lote-esgotado-260324.jpg" alt="Mustang" width="350" height="350">
+                <p>Mustang<br>R$640.000</p>
+                <button onclick="redirecionar('mustang.html')">Saiba Mais</button>
+        </div>
+        <div class="corfundo1">
+            <img src="mercedes.jpeg" alt="mercedes" width="350" height="350">
+                <p>Mercedes<br>R$700.000</p>
+                <button onclick="redirecionar('mercedes.html')">Saiba Mais</button>
+        </div>
+        <div class="corfundo2">
+            <img src="fiat.jpeg" alt="fiat" width="350" height="350">
+                <p>Fiat<br>R$84.000</p>
+                <button onclick="redirecionar('fiat.html')">Saiba Mais</button>
+        </div>
+        <div class="corfundo3">
+            <img src="toyota.png" alt="toyota" width="350" height="350">
+                <p>Toyota<br>R$200.000</p>
+                <button onclick="redirecionar('toyota.html')">Saiba Mais</button>
+        </div>
+        <div class="corfundo4">
+            <img src="ferrari.jpeg" alt="ferrari" width="350" height="350">
+                <p>Ferrari<br>R$19.000.000</p>
+                <button onclick="redirecionar('ferrari.html')">Saiba Mais</button>
+        </div>
+    </main>
+    <script>
+        function redirecionar(arquivo){
+            window.location.href = arquivo;
+        }
+        
+        // Função para obter o valor do ID da URL
+        function getCarId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Exemplo de dados dos carros (poderia vir de uma API ou JSON)
+        const cars = {
+            1: {
+                name: "Lamborghini",
+                price: "R$ 1.500.000",
+                description: "Descrição detalhada do Carro 1. Inclua todas as especificações importantes, como ano, modelo, cor, motor, etc.",
+                image: "img/car1.jpg"
+            },
+            2: {
+                name: "Mustang GT",
+                price: "R$ 600.000",
+                description: "Descrição detalhada do Carro 2. Inclua todas as especificações importantes, como ano, modelo, cor, motor, etc.",
+                image: "img/car2.jpg"
+            },
+            // Adicione mais carros conforme necessário
+        };
+
+        // Obtém o ID do carro da URL
+        const carId = getCarId();
+
+        // Exibe os detalhes do carro correspondente
+        if (carId && cars[carId]) {
+            document.querySelector('h2').textContent = cars[carId].name;
+            document.querySelector('p:nth-of-type(1)').textContent = cars[carId].price;
+            document.querySelector('p:nth-of-type(2)').textContent = cars[carId].description;
+            document.querySelector('img').src = cars[carId].image;
+            document.querySelector('img').alt = cars[carId].name;
+        } else {
+            // Se o ID não for válido, exiba uma mensagem de erro
+            document.querySelector('h2').textContent = "Carro não encontrado";
+            document.querySelector('p:nth-of-type(1)').textContent = "";
+            document.querySelector('p:nth-of-type(2)').textContent = "Desculpe, não conseguimos encontrar o carro solicitado.";
+            document.querySelector('img').style.display = "none"; // Esconde a imagem
+        }
+</script>
+</body>
+</html>
