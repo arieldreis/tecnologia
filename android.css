@@ -15,6 +15,7 @@
     --cor3: #2fa866;
     --cor4: #1a5c37;
     --cor5: #063d1e;
+    --cor6: white;
 }
 body {
    background-color:var(--cor0);
@@ -39,7 +40,7 @@ nav{
 }
 a:hover{
    background-color: var(--cor3);
-   color: var(--cor5);
+   color: var(--cor6);
    border-radius: 5px;
    transition: background-color 2s;
    width: 100%;
