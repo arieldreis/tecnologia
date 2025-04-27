@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;             
+}
+header{
+    background-color: #444;
+}
+nav,a{
+    color: #ffffff;
+    background-color: #444;
+    transition: 1s;
+}
+a:hover{
+    background-color: #1a1212;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 20px;
+}
+li, a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+p{
+   margin: 20px;
+}
+h2{
+    margin: 20px;
+}
+button{
+    margin: 20px;
+    height: 5vh;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(97, 97, 97, 0.484);
+    cursor: pointer;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;  
+    width: 150px;
+    transition: 0.7s;
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.829);
+    transform: scale(1.1);
+}
+button:active{
+    background-color: red;
+}

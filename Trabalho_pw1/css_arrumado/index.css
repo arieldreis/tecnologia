@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 #header {
     background-image: linear-gradient(to top, #006400, #98FB98); /* Verde Escuro para Verde Claro */
     height: 15vh;
@@ -9,27 +8,23 @@
     width: 100%;
     padding: 0;
 }
-
 h1 {
     color: #FFFAFA; /* Branco Neve */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     box-shadow: 1px 0px 0px 0px #0047AB; /* Azul Escuro */
 }
-
 p {
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFAFA; /* Branco Neve */
     font-size: 5mm;
     padding: 0 30px;
 }
-
 a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #0047AB; /* Azul Escuro */
 }
-
 a:hover {
     background-color: #98FB98; /* Verde Claro */
     border-radius: 3px;
